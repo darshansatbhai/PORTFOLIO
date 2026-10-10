@@ -20,7 +20,7 @@ import Footer from './components/Footer';
 import BackToHome from './components/BackToHome';
 import BuyMeCoffee from './components/BuyMeCoffee';
 import CommandPalette from './components/CommandPalette';
-import CookieConsent from './components/CookieConsent';
+
 import ErrorBoundary from './components/ErrorBoundary';
 import MatrixRain from './components/MatrixRain';
 import DynamicIsland from './components/DynamicIsland';
@@ -178,7 +178,7 @@ const AppContent = ({ isSelfDestructing }) => {
         <BackToHome />
         <BuyMeCoffee />
       </div>
-      <CookieConsent />
+      
       <MacDock />
     </SpotlightTracker>
     </ReactLenis>
