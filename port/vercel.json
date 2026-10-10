@@ -23,12 +23,12 @@
       ],
       "destination": "/llms.txt"
     },
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/about", "destination": "/index.html" },
-    { "source": "/projects", "destination": "/index.html" },
-    { "source": "/contact", "destination": "/index.html" },
-    { "source": "/privacy", "destination": "/index.html" },
-    { "source": "/admin(.*)", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/", "destination": "/" },
+    { "source": "/about", "destination": "/" },
+    { "source": "/projects", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    { "source": "/privacy", "destination": "/" },
+    { "source": "/admin(.*)", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
