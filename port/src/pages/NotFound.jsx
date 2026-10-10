@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUpRight, Compass } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
+import { Mascot } from 'page-mascot';
 import './NotFound.css';
 
 const NotFound = () => {
@@ -15,7 +16,15 @@ const NotFound = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                        style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                     >
+                        <div style={{ zIndex: 10, marginBottom: '-40px' }}>
+                            <Mascot 
+                                directions="/mascots/fox-directions.webp"
+                                reactions="/mascots/fox-reactions.webp"
+                                size={120}
+                            />
+                        </div>
                         <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.05} transitionSpeed={2000} className="interactive">
                             <div className="notfound-num-wrap">
                                 <h1 className="notfound-404">404</h1>
