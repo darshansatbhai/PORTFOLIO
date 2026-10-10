@@ -296,7 +296,7 @@ const Projects = () => {
                 {/* ═══════ HEADER ═══════ */}
                 <header className="ps-header">
                     <div className="ps-app-icon">
-                        <img src={project.iconUrl} alt={`${project.title} Icon`} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                        <img src={project.iconUrl} alt={`${project.title} Icon`} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                     </div>
                     <div className="ps-app-details">
                         <h1 className="ps-title">{project.title}</h1>
@@ -347,7 +347,7 @@ const Projects = () => {
                 <ScrollReveal delay={0.3}>
                 <div className="ps-gallery">
                     {project.gallery.map((imgSrc, idx) => (
-                        <img key={idx} src={imgSrc} alt={`${project.title} Screenshot ${idx + 1}`} className="ps-gallery-img" />
+                        <img key={idx} src={imgSrc} alt={`${project.title} Screenshot ${idx + 1}`} loading="lazy" className="ps-gallery-img" />
                     ))}
                 </div>
                 </ScrollReveal>
@@ -450,7 +450,7 @@ const Projects = () => {
                         {otherProjects.map(p => (
                             <div key={p.id} className="ps-suggestion-card interactive" onClick={() => handleSwitch(p.id)}>
                                 <div className="ps-suggestion-icon">
-                                    <img src={p.iconUrl} alt={p.title} />
+                                    <img src={p.iconUrl} alt={p.title} loading="lazy" />
                                 </div>
                                 <div className="ps-suggestion-details">
                                     <h3>{p.title}</h3>

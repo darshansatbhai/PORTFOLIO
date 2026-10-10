@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, useScroll, useVelocity, useSpring, useTransform } from 'framer-motion';
 import { Home, User, Layers, Mail, Search, Laptop, FileText, BookOpen } from 'lucide-react';
-import { Glass } from '@samasante/liquid-glass';
 import './MacDock.css';
 
 const liquidOptics = {

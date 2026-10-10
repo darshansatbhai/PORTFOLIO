@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import { Bell, Mail, CheckCircle2, Clock, BatteryMedium, BatteryWarning, BatteryFull, Zap, Share2, Wifi, WifiOff, Terminal, GitCommit, Heart } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Glass } from "@samasante/liquid-glass";
 import './DynamicIsland.css';
 
 const liquidOptics = {
@@ -251,7 +250,7 @@ const DynamicIsland = () => {
                         >
                             <div className="di-top-row">
                                 <div className="di-profile">
-                                    <img src="/profile.jpg" alt="Profile" />
+                                    <img src="/favicon.png" alt="Profile" />
                                     <div className="di-text">
                                         <span className="di-title">Darshan Satbhai</span>
                                         <span className="di-subtitle">Available for work</span>
@@ -286,10 +285,6 @@ const DynamicIsland = () => {
                             <div className="di-bottom-row">
                                 <div className="di-btn-group">
                                     <a href="mailto:daarshannexaa@gmail.com" className="di-hire-btn">Hire Me</a>
-                                    <button className="di-copy-btn" onClick={handleHeartClick} title="Send Love" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                        <Heart size={16} fill="#ff2d55" color="#ff2d55" />
-                                        <span style={{ fontSize: '11px', fontWeight: 'bold', fontFamily: 'monospace' }}>{formatLikes(likeCount)}</span>
-                                    </button>
                                     <button className="di-copy-btn" onClick={handleCopyLink} title="Copy Link">
                                         <Share2 size={16} />
                                     </button>
