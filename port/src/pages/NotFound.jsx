@@ -20,8 +20,8 @@ const NotFound = () => {
                     >
                         <div style={{ zIndex: 10, marginBottom: '-40px' }}>
                             <Mascot 
-                                directions="/mascots/fox-directions.webp"
-                                reactions="/mascots/fox-reactions.webp"
+                                directions="/mascots/beard-directions.webp"
+                                reactions="/mascots/beard-reactions.webp"
                                 size={120}
                             />
                         </div>
